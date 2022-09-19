@@ -1,0 +1,105 @@
+.footer {
+    padding: 2rem 0 4rem;
+    background-color: var(--color-black-200);
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer__box {
+    flex: 1 1 30rem;
+}
+
+.footer__box .logo h1 {
+    color: var(--color-white);
+    margin-bottom: .8rem;
+}
+
+.footer__box p {
+    color: var(--color-white);
+    line-height: 1.6;
+    margin-bottom: .7rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.footer .socials {
+    display: flex;
+    gap: 1rem;
+}
+.footer__box .socials a {
+    display: flex;
+    padding: .8rem;
+    color: var(--color-white);
+    border: .1rem solid var(--color-white);
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+.footer__box .socials a:hover {
+    background-color: var(--color-gray-200);
+}
+
+.footer__box h4 {
+    color: var(--color-white);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.footer__box ul li{
+    margin: 1rem 0;
+}
+
+.footer__box ul li a {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.footer__box ul li a:hover {
+    padding-left: .4rem;
+}
+
+.footer__box form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.footer__box form input {
+    flex-basis: 80%;
+    height: 4rem;
+    border: 0;
+    padding: 1rem;
+    color: var(--color-black-200);
+    text-transform: none;
+}
+
+.footer__box form input::placeholder {
+    color: var(--color-gray-200);
+}
+
+.footer__box form input:focus {
+    border: .2rem solid var(--color-gray-300);
+}
+
+.footer__box form button {
+    flex-basis: 20%;
+}
+
+.footer small {
+    border-top: .1rem solid var(--color-gray-100);
+    padding-top: 1rem;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 200;
+}

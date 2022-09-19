@@ -1,0 +1,180 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 10%;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.left__card {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    flex: 1 1 10rem;
+    justify-content: center;
+    border: .1rem solid var(--color-gray-300);
+    transition: var(--transition);
+}
+
+.left__card:hover {
+    background-color: transparent;
+}
+
+.left__card:hover address,
+.left__card:hover p,
+.left__card:hover .left__card-icon {
+    color: var(--color-black-200);
+}
+
+.left__card-icon {
+    font-size: 1.8rem;
+}
+
+.left__card address {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.right form .form__input {
+    width: 100%;
+}
+
+.form__input input {
+    width: 100%;
+    height: 5rem;
+    border: .1rem solid var(--color-gray-300);
+    background-color: transparent;
+    border-radius: .8rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    text-transform: none;
+    transition: var(--transition);
+}
+
+.form__input input:focus,
+.form__input textarea:focus {
+    border: .2rem solid var(--color-gray-300);
+}
+
+.form__input input::placeholder,
+.form__input textarea::placeholder {
+    color: var(--color-black-200);
+}
+
+.form__input textarea {
+    width: 100%;
+    height: 10rem;
+    border: .1rem solid var(--color-gray-300);
+    background-color: transparent;
+    border-radius: .8rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: none;
+    transition: var(--transition);
+    overflow-y: auto;
+}
+
+.right__form-btn {
+    border: 0;
+    padding: .8rem 1.6rem;
+    color: var(--color-white);
+    background-color: var(--color-gray-300);
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.right__form-btn:hover {
+    background-color: var(--color-gray-200);
+}
+
+.right__form-btn:active {
+    transform: scale(.8);
+}
+
+/* faqs */
+.faqs__heading {
+    justify-content: center;
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+    align-items: flex-start;
+}
+
+.faq {
+    background-color: var(--color-gray-100);
+    border-radius: .8rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__question h4 {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.faq__icon {
+    border: 0;
+    font-size: 2rem;
+    color: var(--color-white);
+    background-color: transparent;
+}
+
+.faq p {
+    margin-top: .8rem;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* media queries */
+@media (max-width:1024px) {
+    .contact__container {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .faqs__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:480px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+}

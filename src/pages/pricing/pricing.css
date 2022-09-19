@@ -1,0 +1,40 @@
+.price__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.price__card {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.price__card-lists li {
+    margin: 1rem 0;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.price__btn {
+    display: inline-block;
+    background-color: var(--color-gray-100);
+    padding: .7rem 1.4rem;
+    border: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.price__btn:hover {
+    background-color: var(--color-gray-200);
+}
+
+.price__btn:active {
+    transform: scale(.8);
+}

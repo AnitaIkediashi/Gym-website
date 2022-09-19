@@ -1,0 +1,152 @@
+.about-us__container,
+.mission__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.about-us__image,
+.mission__container-image {
+    aspect-ratio: 1/1;
+}
+
+.about-us__image img,
+.mission__container-image img {
+    height: 100%;
+}
+
+.about-us__content,
+.mission__container-content {
+    padding: 0 1rem;
+}
+
+.about-us__content h4,
+.mission__container-content h4 {
+    color: var(--color-black-200);
+    margin-bottom: .8rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.about-us__content p,
+.mission__container-content p {
+    color: var(--color-black-200);
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+/* testimonials */
+.testimonial__heading {
+    justify-content: center;
+}
+
+.testimonial__container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.testimonial__box {
+    width: 100%;
+    background-color: var(--color-gray-300);
+    padding: 1.8rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    transition: var(--transition);
+}
+
+.testimonial__box-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    gap: 1rem;
+}
+
+.testimonial__box-image {
+    flex-basis: 15%;
+    aspect-ratio: 1/1;
+    
+}
+
+.testimonial__box-image img {
+    height: 100%;
+    border-radius: 50%;
+    border: .1rem solid var(--color-white);
+}
+
+.testimonial__box-title {
+    flex-basis: 85%;
+    color: var(--color-white);
+}
+
+.testimonial__box-title h4 {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.testimonial__box-title small {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.testimonial__box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--color-white);
+    font-weight: 200;
+}
+
+.testimonial__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.testimonial__buttons button {
+    border: 0;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: var(--color-gray-100);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: .7rem;
+    transition: var(--transition);
+}
+
+.testimonial__buttons button:hover {
+    background-color: var(--color-gray-200);
+}
+
+.testimonial__buttons button:active {
+    transform: scale(.5);
+}
+
+/* media queries */
+@media (max-width:768px) {
+    .about-us__container,
+    .mission__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us__content,
+    .mission__container-content {
+        padding: 1rem 0;
+    }
+
+    .mission__container-image {
+        grid-row: 1;
+    }
+
+    .testimonial__container {
+        width: 80%;
+    }
+}
+
+@media (max-width:480px) {
+    .testimonial__container {
+        width: 100%;
+    }
+}
